@@ -10,4 +10,8 @@ div[data-reactroot] {
   height: 100%;
   padding: 0;
   margin: 0;
+  background-image: url("/images/concrete.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }

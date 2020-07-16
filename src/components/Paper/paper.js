@@ -14,6 +14,11 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(2),
         margin: 'auto',
         maxWidth: 500,
+        '& > *': {
+            margin: theme.spacing(1),
+            width: theme.spacing(200),
+            height: theme.spacing(50),
+        },
     },
     image: {
         width: 128,
@@ -32,7 +37,7 @@ export default function ComplexGrid() {
 
     return (
         <div className={classes.root}>
-            <Paper className={classes.paper}>
+            <Paper className={classes.paper} elevation={3}>
                 <Grid container spacing={2}>
                     <Grid item>
                         <ButtonBase className={classes.image}>
