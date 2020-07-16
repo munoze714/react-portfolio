@@ -1,13 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 
 
-function Search() {
 
-  return (
-    <>
-      <h1 className="text-center">Contact</h1>
-    </>
-  );
+class Search extends Component {
+  render(props) {
+    return (
+      <>
+        <h1>Contact</h1>
+      </>
+    )
+  }
 }
 
 export default Search;

@@ -1,39 +1,34 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 
 
-function Navbar() {
-
-  return (
-    <nav>
-      <Link to="/">
-        Portfolio
-      </Link>
-      <div>
-        <ul>
+class Navbar extends Component {
+  render() {
+    return (
+      <>
+        <ul className="header">
           <li>
-            <Link
-              to="/">
-              About
-            </Link>
+            <NavLink to="/">About</NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/portfolio">
               Portfolio
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/contact">
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
-      </div>
-    </nav>
-  );
+      </>
+    )
+  }
 }
+
+
 
 export default Navbar;

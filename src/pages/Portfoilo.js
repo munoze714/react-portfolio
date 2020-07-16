@@ -1,13 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 
 
-function Discover() {
 
-  return (
-    <>
-      <h1 className="text-center">Portfolio</h1>
-    </>
-  );
+
+class Portfolio extends Component {
+  render(props) {
+    return (
+      <>
+        <h1>Portfolio</h1>
+
+      </>
+    )
+  }
 }
 
-export default Discover;
+export default Portfolio;
