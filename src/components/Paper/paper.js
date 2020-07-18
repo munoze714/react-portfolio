@@ -1,9 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import ButtonBase from '@material-ui/core/ButtonBase';
+import { Grid, Paper, Typography, ButtonBase } from '@material-ui/core';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -16,13 +13,13 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: 500,
         '& > *': {
             margin: theme.spacing(1),
-            width: theme.spacing(200),
-            height: theme.spacing(50),
+            width: theme.spacing(50),
+            height: theme.spacing(40),
         },
     },
     image: {
-        width: 128,
-        height: 128,
+        width: 200,
+        height: 200,
     },
     img: {
         margin: 'auto',
@@ -41,7 +38,7 @@ export default function ComplexGrid() {
                 <Grid container spacing={2}>
                     <Grid item>
                         <ButtonBase className={classes.image}>
-                            <img className={classes.img} alt="complex" src="/images/profile.JPG" />
+                            <img className={classes.img} alt="complex" src="/images/me.jpeg" />
                         </ButtonBase>
                     </Grid>
                     <Grid item xs={12} sm container>

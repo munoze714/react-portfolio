@@ -1,24 +1,34 @@
 import React, { Component } from "react";
-import { Route, HashRouter } from "react-router-dom";
-import Portfoilo from "./pages/Portfoilo";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import "./index.css";
 
 
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <Router>
         <Navbar />
-        <Route path="/" component={About} />
-        <Route path="/about" component={About} />
-        <Route path="/portfolio" component={Portfoilo} />
-        <Route path="/contact" component={Contact} />
-        <Footer />
-      </HashRouter>
+        <Switch>
+          <Route exact path="/" component={About} />
+        </Switch>
+        <Switch>
+          <Route path="/about" component={About} />
+        </Switch>
+        <Switch>
+          <Route path="/portfolio" component={Portfolio} />
+        </Switch>
+        <Switch>
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </Router >
     )
   }
 }
