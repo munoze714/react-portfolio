@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import {
   AppBar,
   Button,
+  ClickAwayListener,
   Toolbar,
   Typography,
   IconButton,
@@ -28,12 +29,21 @@ const useStyles = makeStyles((theme) => ({
   root: {
     "& .MuiPaper-root": {
       width: '100%',
-      maxWidth: 360,
+      maxWidth: 200,
       backgroundColor: "#373737",
-    }
+    },
+    "& .MuiListItemIcon-root ": {
+      color: "black",
+    },
+    "& .MuiDivider-root": {
+      color: '#886ea4a'
+    },
   },
   link: {
-    color: "#e3874f",
+    '&:hover': {
+      color: '#e3874f'
+    },
+    color: "white",
   },
   menuButton: {
     marginRight: theme.spacing(6),
@@ -49,9 +59,11 @@ const useStyles = makeStyles((theme) => ({
     color: "#e3874f"
   },
   name: {
-    fontFamily: "serif",
+    fontFamily: "lato",
+    borderStyle: "solid",
     background: "#e3874f",
-    padding: "50px",
+    textAlign: "center",
+    padding: "25px",
   },
   drawerHeader: {
     display: 'flex',
@@ -91,7 +103,7 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h5" className={classes.title}>
-            Welcome
+            Portfolio
           </Typography>
         </Toolbar>
         <Drawer
@@ -100,9 +112,11 @@ export default function Navbar() {
           open={open}
         >
           <div className={classes.drawerHeader}>
-            <IconButton onClick={handleDrawerClose}>
-              {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-            </IconButton>
+            <ClickAwayListener onClickAway={handleDrawerClose}>
+              <IconButton onClick={handleDrawerClose}>
+                {theme.direction === 'ltr' ? <ChevronLeftIcon fontSize="large" /> : <ChevronRightIcon />}
+              </IconButton>
+            </ClickAwayListener>
           </div>
           <Divider />
           <List component="nav">
@@ -110,27 +124,27 @@ export default function Navbar() {
             <ListItem
               component={Link} to="/about"
               className={classes.button}
-              button onClick={handleDrawerClose}>
+              button>
               <ListItemIcon>
-                <EmojiPeopleIcon />
+                <EmojiPeopleIcon fontSize="large" />
               </ListItemIcon>
               <ListItemText primary="About" className={classes.link} />
             </ListItem>
             <ListItem
               component={Link} to="/portfolio"
               className={classes.button}
-              button onClick={handleDrawerClose}>
+              button>
               <ListItemIcon>
-                <ImportantDevicesTwoToneIcon />
+                <ImportantDevicesTwoToneIcon fontSize="large" />
               </ListItemIcon>
               <ListItemText primary="Projects" className={classes.link} />
             </ListItem>
             <ListItem
               component={Link} to="/contact"
               className={classes.button}
-              button onClick={handleDrawerClose}>
+              button>
               <ListItemIcon>
-                <MailTwoToneIcon />
+                <MailTwoToneIcon fontSize="large" />
               </ListItemIcon>
               <ListItemText primary="Contact" className={classes.link} />
             </ListItem>
@@ -141,7 +155,7 @@ export default function Navbar() {
             variant="contained"
             color="default"
             className={classes.button}
-            startIcon={<SystemUpdateAltSharpIcon />}>
+            startIcon={<SystemUpdateAltSharpIcon fontSize="large" />}>
             Resume
           </Button>
         </Drawer>

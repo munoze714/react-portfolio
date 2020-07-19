@@ -8,12 +8,15 @@ import DescriptionIcon from '@material-ui/icons/Description';
 
 const useStyles = makeStyles({
   root: {
+    '& .Mui-selected': {
+      color: 'white',
+    },
     height: "56px",
     backgroundColor: "#21201f",
   },
   icons: {
-    color: "#e3874f"
-  }
+    color: '#e3874f'
+  },
 });
 
 export default function Links() {
@@ -26,7 +29,10 @@ export default function Links() {
   return (
     <>
       <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-        <BottomNavigationAction label="linkedin" value="linkedin" icon={<LinkedInIcon />} className={classes.icons} />
+        <BottomNavigationAction label="linkedin" value="linkedin" icon={<LinkedInIcon />} classes={{
+          root: classes.icons,
+          selected: classes.selected,
+        }} />
         <BottomNavigationAction label="resume" value="resume" icon={<DescriptionIcon />} className={classes.icons} />
         <BottomNavigationAction label="github" value="github" icon={<GitHubIcon />} className={classes.icons} />
       </BottomNavigation>

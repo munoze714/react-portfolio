@@ -5,7 +5,6 @@ class About extends Component {
   render(props) {
     return (
       <>
-        <h1>About Me</h1>
         <Paper />
       </>
     )

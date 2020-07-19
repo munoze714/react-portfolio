@@ -8,9 +8,12 @@ import Links from "../Links";
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     paper: {
-        padding: theme.spacing(2),
+        padding: theme.spacing(4),
         background: "#707070",
         margin: 'auto',
         maxWidth: 500,
@@ -35,25 +38,26 @@ export default function ComplexGrid() {
             <Paper className={classes.paper} elevation={24}>
                 <Grid container spacing={2}>
                     <Grid item>
-                        <Avatar className={classes.avatar} alt="complex" src="/images/me.jpeg" />
+                        <Avatar className={classes.avatar} alt="me" src="/images/me.jpeg" />
                     </Grid>
                     <Grid item xs={12} sm container>
                         <Grid item xs container direction="column" spacing={2}>
                             <Grid item xs>
-                                <Typography gutterBottom fontSize={20} variant="subtitle1">
-                                    Hello
+                                <Typography gutterBottom fontSize={50} variant="subtitle1">
+                                    I'm Elizabeth Munoz
                                  </Typography>
                                 <Typography variant="body2" gutterBottom>
-                                    I'm Elizabeth Munoz
+                                    Full-Stack Web Developer
                                  </Typography>
                                 <Divider />
                                 <Typography variant="body2" color="textSecondary">
-                                    Welcome to my Portfolio
+                                    I am a delicate Web Developer with a background in Graphic Design. When I discovered a passion to create . Attained a Certificate in Full Stack Web Development at University of Arizona. I enjoy learning, problem solving and prevailing. Excited to use my new skills in a new profession!
                                 </Typography>
                             </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
+                <br></br>
                 <Links alignItems="flex-end" />
             </Paper>
         </div >
