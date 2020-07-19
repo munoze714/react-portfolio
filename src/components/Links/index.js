@@ -8,30 +8,28 @@ import DescriptionIcon from '@material-ui/icons/Description';
 
 const useStyles = makeStyles({
   root: {
-    width: 200,
+    height: "56px",
+    backgroundColor: "#21201f",
   },
+  icons: {
+    color: "#e3874f"
+  }
 });
 
-export default function Footer() {
+export default function Links() {
   const classes = useStyles();
   const [value, setValue] = React.useState('recents');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
-
-
-
   return (
     <>
-
       <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-        <BottomNavigationAction label="linkedin" value="linkedin" icon={<LinkedInIcon />} />
-        <BottomNavigationAction label="resume" value="resume" icon={<DescriptionIcon />} />
-        <BottomNavigationAction label="github" value="github" icon={<GitHubIcon />} />
+        <BottomNavigationAction label="linkedin" value="linkedin" icon={<LinkedInIcon />} className={classes.icons} />
+        <BottomNavigationAction label="resume" value="resume" icon={<DescriptionIcon />} className={classes.icons} />
+        <BottomNavigationAction label="github" value="github" icon={<GitHubIcon />} className={classes.icons} />
       </BottomNavigation>
-
     </>
   );
 }
