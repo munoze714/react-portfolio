@@ -55,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   toolbar: {
+    position: "static",
     background: "#21201f",
     color: "#e3874f"
   },
