@@ -3,7 +3,6 @@ import Title from "../components/Title"
 import InputField from "../components/InputField"
 
 
-
 class Contact extends Component {
   render(props) {
     return (

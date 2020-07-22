@@ -35,7 +35,7 @@ export default function ComplexGrid() {
 
     return (
         <div className={classes.root}>
-            <Paper className={classes.paper} elevation={24}>
+            <Paper className={classes.paper} square variant="outlined" elevation={24}>
                 <Grid container spacing={2}>
                     <Grid item>
                         <Avatar className={classes.avatar} alt="me" src="/images/me.jpeg" />
