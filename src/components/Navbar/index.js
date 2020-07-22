@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     "& .MuiDivider-root": {
       color: '#886ea4a'
     },
+    position: "fixed",
   },
   link: {
     '&:hover': {

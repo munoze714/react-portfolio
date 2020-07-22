@@ -11,14 +11,13 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        "& .MuiAvatar-img": {
+        // "& .MuiAvatar-img": {
 
-        }
+        // }
     },
     paper: {
         padding: theme.spacing(8),
         background: "#707070",
-        // margin: 'auto',
         maxWidth: 500,
         [theme.breakpoints.down("sm")]: {
             maxWidth: 400,
@@ -28,8 +27,8 @@ const useStyles = makeStyles((theme) => ({
     avatar: {
         height: "300px",
         width: "300px",
-        // marginTop: "20px",
-        // marginBottom: "20px",
+        marginTop: "20px",
+        marginBottom: "20px",
         [theme.breakpoints.down("sm")]: {
             width: "200px",
             height: "200px",
@@ -44,7 +43,7 @@ export default function ComplexGrid() {
         <div className={classes.root}>
             <Paper className={classes.paper} square variant="outlined" elevation={24}>
                 <Grid container spacing={2}>
-                    <Grid item >
+                    <Grid item>
                         <Avatar className={classes.avatar} alt="me" src="/images/me.jpeg" />
                     </Grid>
                     <Grid item xs={12} sm container>
@@ -53,11 +52,11 @@ export default function ComplexGrid() {
                                 <Typography gutterBottom fontSize={50} variant="subtitle1">
                                     I'm Elizabeth Munoz
                                  </Typography>
-                                <Typography variant="body2" gutterBottom>
+                                <Typography variant="subtitle2" gutterBottom>
                                     Full-Stack Web Developer
                                  </Typography>
                                 <Divider />
-                                <Typography variant="body2" color="textSecondary">
+                                <Typography variant="body2" color='textPrimary'>
                                     I am a delicate Web Developer with a background in Graphic Design. When I discovered a passion to create . Attained a Certificate in Full Stack Web Development at University of Arizona. I enjoy learning, problem solving and prevailing. Excited to use my new skills in a new profession!
                                 </Typography>
                             </Grid>

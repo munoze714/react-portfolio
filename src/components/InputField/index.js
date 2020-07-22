@@ -63,12 +63,13 @@ export default function InputField() {
                             component="form"
                             name="contact"
                             method="post"
+                            action='/contact'
                             data-netlify="true"
                             netlify-honeypot="bot-field">
                             <CssTextField
                                 type="hidden"
-                                name="portfolio"
-                            // value="contact"
+                                name="form-name"
+                                value="contact"
                             />
                             <CssTextField
                                 fullWidth={true}
@@ -100,7 +101,7 @@ export default function InputField() {
                                 rowsMax={20}
                             />
                             <br></br>
-                            <Button variant="outlined" type="submit" className={classes.button} >Send   <SendIcon /></Button>
+                            <Button variant="outlined" type="submit" className={classes.button} >Send<SendIcon /></Button>
                         </Grid>
                     </Paper>
                 </Grid>
