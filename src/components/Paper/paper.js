@@ -11,21 +11,28 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        "& .MuiAvatar-img": {
+
+        }
     },
     paper: {
-        padding: theme.spacing(4),
+        padding: theme.spacing(8),
         background: "#707070",
-        margin: 'auto',
+        // margin: 'auto',
         maxWidth: 500,
+        [theme.breakpoints.down("sm")]: {
+            maxWidth: 400,
+            maxheight: 300
+        },
     },
     avatar: {
-        height: "200px",
-        width: "200px",
-        marginTop: "20px",
-        marginBottom: "20px",
+        height: "300px",
+        width: "300px",
+        // marginTop: "20px",
+        // marginBottom: "20px",
         [theme.breakpoints.down("sm")]: {
-            width: "100px",
-            height: "100px",
+            width: "200px",
+            height: "200px",
         },
     },
 }));
@@ -37,7 +44,7 @@ export default function ComplexGrid() {
         <div className={classes.root}>
             <Paper className={classes.paper} square variant="outlined" elevation={24}>
                 <Grid container spacing={2}>
-                    <Grid item>
+                    <Grid item >
                         <Avatar className={classes.avatar} alt="me" src="/images/me.jpeg" />
                     </Grid>
                     <Grid item xs={12} sm container>

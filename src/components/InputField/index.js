@@ -1,17 +1,45 @@
 import React from 'react';
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles, } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box, Paper } from "@material-ui/core";
-// import SendIcon from "@material-ui/core/Send";
+import SendIcon from '@material-ui/icons/Send';
+
+const CssTextField = withStyles({
+    root: {
+        '& label.Mui-focused': {
+            color: 'black',
+        },
+        '& .MuiInput-underline:after': {
+            borderBottomColor: 'snow',
+        },
+        '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+                borderColor: "snow",
+            },
+            '&:hover fieldset': {
+                borderColor: '#e3874f',
+            },
+            '&.Mui-focused fieldset': {
+                borderColor: '#e3874f',
+            },
+        },
+    },
+})(TextField);
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        // backgroundColor: "snow",
         color: "#e3874f",
-        padding: theme.spacing(4),
+        padding: theme.spacing(6),
         background: "#707070",
         margin: 'auto',
-        maxWidth: 500,
+        maxWidth: 400,
+
     },
+    button: {
+        marginTop: "1rem",
+        color: "#e3874f",
+        borderColor: "#e3874f",
+    }
 
 }));
 
@@ -19,49 +47,61 @@ const useStyles = makeStyles((theme) => ({
 export default function InputField() {
 
     const classes = useStyles();
-    // const theme = useTheme();
+
     return (
         <>
             <Box component="div" >
                 <Grid container justify="center">
-                    <Paper component="form"
-                        netlify
-                        netlify-honeypot="bot-field"
-                        // hidden
+                    <Paper
                         variant="outlined"
                         square elevation={24}
                         className={classes.root}>
                         <Typography variant="h5">
-                            Hire or contact me..
+                            Looking foward to hearing from you!
                     </Typography>
-                        <TextField
-                            type="text"
-                            name="name"
-                            fullwidth={true}
-                            label="Name"
-                            variant="outlined"
-                            margin="dense"
-                            size="medium" />
-                        <br></br>
-                        <TextField
-                            type="email"
-                            name="email"
-                            fullwidth={true}
-                            label="Email"
-                            variant="outlined"
-                            margin="dense"
-                            size="medium" />
-                        <br></br>
-                        <TextField
-                            type="email"
-                            name="message"
-                            fullwidth={true}
-                            label="Message"
-                            variant="outlined"
-                            margin="dense"
-                            size="medium" />
-                        <br></br>
-                        <Button variant="outlined" type="submit" fullwidth={true}>Contact Me</Button>
+                        <Grid
+                            component="form"
+                            name="contact"
+                            method="post"
+                            data-netlify="true"
+                            netlify-honeypot="bot-field">
+                            <CssTextField
+                                type="hidden"
+                                name="portfolio"
+                            // value="contact"
+                            />
+                            <CssTextField
+                                fullWidth={true}
+                                type="text"
+                                name="name"
+                                label="Name"
+                                variant="outlined"
+                                margin="dense"
+                            />
+                            <br></br>
+                            <CssTextField
+                                fullWidth={true}
+                                type="email"
+                                name="email"
+                                label="Email"
+                                variant="outlined"
+                                margin="dense"
+                            />
+                            <br></br>
+                            <CssTextField
+                                fullWidth={true}
+                                type="email"
+                                name="message"
+                                label="Message"
+                                variant="outlined"
+                                margin="dense"
+                                multiline
+                                rows={4}
+                                rowsMax={20}
+                            />
+                            <br></br>
+                            <Button variant="outlined" type="submit" className={classes.button} >Send   <SendIcon /></Button>
+                        </Grid>
                     </Paper>
                 </Grid>
             </Box>
