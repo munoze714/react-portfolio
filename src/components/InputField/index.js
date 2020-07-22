@@ -62,7 +62,7 @@ export default function InputField() {
                         <Grid
                             component="form"
                             name="contact"
-                            method="post"
+                            method="POST"
                             action='/contact'
                             data-netlify="true"
                             netlify-honeypot="bot-field">
