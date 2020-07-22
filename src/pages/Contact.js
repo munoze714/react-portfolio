@@ -1,15 +1,18 @@
 import React, { Component } from "react";
+import Title from "../components/Title"
+import InputField from "../components/InputField"
 
 
 
-class Search extends Component {
+class Contact extends Component {
   render(props) {
     return (
       <>
-        <h1>Contact</h1>
+        <Title>Lets Connect</Title>
+        <InputField />
       </>
     )
   }
 }
 
-export default Search;
+export default Contact;

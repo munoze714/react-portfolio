@@ -29,12 +29,9 @@ export default function Links() {
   return (
     <>
       <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-        <BottomNavigationAction label="linkedin" value="linkedin" icon={<LinkedInIcon />} classes={{
-          root: classes.icons,
-          selected: classes.selected,
-        }} />
-        <BottomNavigationAction label="resume" value="resume" icon={<DescriptionIcon />} className={classes.icons} />
-        <BottomNavigationAction label="github" value="github" icon={<GitHubIcon />} className={classes.icons} />
+        <BottomNavigationAction label="linkedin" value="linkedin" href="https://www.linkedin.com/in/emunoz714/" target="_blank" icon={<LinkedInIcon />} className={classes.icons} />
+        <BottomNavigationAction label="resume" value="resume" href="" target="_blank" icon={<DescriptionIcon />} className={classes.icons} />
+        <BottomNavigationAction label="github" value="github" href="https://github.com/munoze714" target="_blank" icon={<GitHubIcon />} className={classes.icons} />
       </BottomNavigation>
     </>
   );

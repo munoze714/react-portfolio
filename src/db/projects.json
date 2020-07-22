@@ -33,7 +33,7 @@
   },
   {
     "id": "5",
-    "title": "Day Planner",
+    "title": "Work Day Scheduler",
     "description": "Calendar application that allows the user to save events for each hour of the day.",
     "image": "/images/dayPlanner.jpeg",
     "live": "https://munoze714.github.io/DayPlanner/",

@@ -12,18 +12,19 @@ import { Divider } from '@material-ui/core';
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
-        background: "#707070",
+        background: "white",
         margin: "4rem",
         float: "left",
         width: "325px",
-        boxShadow: "0 3px 6px #999, 0 3px 6px #999",
-
+        "&:hover": {
+            boxShadow: "0 3px 6px #999, 0 3px 6px #999",
+        }
     },
     media: {
         height: 200,
     },
     content: {
-
+        height: 175,
     },
     action: {
         "& .MuiButton-textPrimary": {
