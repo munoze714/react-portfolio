@@ -60,18 +60,14 @@ export default function InputField() {
                     </Typography>
                         <form
                             name="contact"
-                            action="POST"
-                            data-netlify="true"
-                            netlify-honeypot="bot-field">
+                            method="post">
                             <CssTextField
-                                class="field"
                                 type="hidden"
                                 name="form-name"
                                 value="contact"
 
                             />
                             <CssTextField
-                                className="field"
                                 fullWidth={true}
                                 type="text"
                                 name="name"
@@ -81,7 +77,6 @@ export default function InputField() {
                             />
                             <br></br>
                             <CssTextField
-                                className="field half"
                                 fullWidth={true}
                                 type="email"
                                 name="email"
@@ -91,7 +86,6 @@ export default function InputField() {
                             />
                             <br></br>
                             <CssTextField
-                                className="field"
                                 fullWidth={true}
                                 type="email"
                                 name="message"
@@ -103,11 +97,11 @@ export default function InputField() {
                                 rowsMax={20}
                             />
                             <br></br>
-                            <Button variant="outlined" type="submit" className={classes.button} >Send<SendIcon /></Button>
-                            <div class="field">
+                            <Button variant="outlined" type="submit" className={classes.button}>Send<SendIcon /></Button>
+                            <div className="field">
                                 <input type="file" name="myfile" id="myfile" placeholder="Upload File" />
                             </div>
-                            <div class="field">
+                            <div className="field">
                                 <div data-netlify-recaptcha="true"></div>
                             </div>
 
