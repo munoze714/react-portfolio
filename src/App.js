@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import {
   BrowserRouter as Router,
   Switch,
+  Redirect
   Route
 } from "react-router-dom";
 import Portfolio from "./pages/Portfolio";
@@ -28,7 +29,7 @@ class App extends Component {
         <Switch>
           <Route path="/contact" component={Contact} />
         </Switch>
-        <Route path="*" component={About} />
+        <Redirect path="*" component={About} />
       </Router >
     )
   }
