@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Color Story",
-    "description": "hgkckgckjgckghckhckhckhgck",
+    "description": "A react app using Material-UI that takes you threw a creative color experience",
     "image": "/images/colorStory.jpeg",
     "live": "https://color-story.herokuapp.com/",
     "github": "https://github.com/Mleuer/Color-Story.git"
@@ -10,15 +10,15 @@
   {
     "id": "2",
     "title": "Squaddle",
-    "description": "Squaddle is an app designed to help you play game with friends according to your schedule. Once signed in, set your availability then view the available deployment times to link up with your friends.",
+    "description": "Handlebars, MVC, and Mysql Sequelize ORM app designed to help you play game with friends according to your schedule. Once signed in, set your availability then view the available deployment times to link up with your friends.",
     "image": "/images/squaddle.jpeg",
-    "live": "https://http://www.squaddle.in/",
+    "live": "https://www.squaddle.in/",
     "github": "https://github.com/munoze714/squaddle.git"
   },
   {
     "id": "3",
     "title": "Shuffle",
-    "description": "Shuffle is an interactive, aggregate web application that allows users to enter their astrological sign and be presented with a “visual horoscope” based on the interaction of content between three cards. ",
+    "description": "Html ,Javascript, and CSS web application that allows you to enter your astrological sign and be presented with a “visual horoscope” based on the interaction of content between three cards. ",
     "image": "/images/shuffle.jpeg",
     "live": "https://munoze714.github.io/shuffle/",
     "github": "https://munoze714.github.io/shuffle/"
@@ -26,7 +26,7 @@
   {
     "id": "4",
     "title": "Eat Da Burger",
-    "description": "Eat Da Burger with MySQL, Node, Express, Handlebars. Following the MVC design pattern; using Node and MySQL to query and route data in my app, and Handlebars to generate your HTML.",
+    "description": "MySQL, Node, Express, Handlebars app following the MVC design pattern; create a burger and devour it!",
     "image": "/images/burger.jpeg",
     "live": "https://eatthaburger.herokuapp.com/",
     "github": "https://github.com/munoze714/Eat-Da-burger.git"
@@ -34,7 +34,7 @@
   {
     "id": "5",
     "title": "Work Day Scheduler",
-    "description": "Calendar application that allows the user to save events for each hour of the day.",
+    "description": "Html , CSS, and Jquery app using Monment.js that allows the you to save events for each hour of the work day.",
     "image": "/images/dayPlanner.jpeg",
     "live": "https://munoze714.github.io/DayPlanner/",
     "github": "https://github.com/munoze714/DayPlanner.git"
@@ -42,7 +42,7 @@
   {
     "id": "6",
     "title": "Quiz",
-    "description": "hgkckgckjgckghckhckhckhgck",
+    "description": "Html, CSS, and Javascript app that takes you threw a timed quiz on basic coding",
     "image": "/images/quiz.jpeg",
     "live": "https://munoze714.github.io/codequiz/",
     "github": "https://github.com/munoze714/codequiz.git"
