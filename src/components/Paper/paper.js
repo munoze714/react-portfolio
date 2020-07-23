@@ -11,12 +11,10 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        // "& .MuiAvatar-img": {
-
-        // }
     },
     paper: {
         padding: theme.spacing(8),
+        margin: "auto",
         background: "#707070",
         maxWidth: 500,
         [theme.breakpoints.down("sm")]: {
@@ -49,16 +47,13 @@ export default function ComplexGrid() {
                     <Grid item xs={12} sm container>
                         <Grid item xs container direction="column" spacing={2}>
                             <Grid item xs>
-                                <Typography gutterBottom fontSize={50} variant="subtitle1">
-                                    I'm Elizabeth Munoz
-                                 </Typography>
-                                <Typography variant="subtitle2" gutterBottom>
+                                <Typography variant="subtitle1" gutterBottom>
                                     Full-Stack Web Developer
                                  </Typography>
                                 <Divider />
                                 <br></br>
-                                <Typography variant="body2" color='textPrimary'>
-                                    I am a delicate Web Developer with a background in Graphic Design. Excited about connecting with clients and collaboration with others to create meaningful applications. Attained a Certificate in Full Stack Web Development at University of Arizona. I enjoy learning, problem solving and prevailing. Excited to use my new skills in a new profession!
+                                <Typography variant="body1" color='textPrimary'>
+                                    I am a delicate Web Developer with a background in Graphic Design. Intrinsic motivation to connect with clients and collaboration with others to develop meaningful applications. Attained a Certificate in Full Stack Web Development at University of Arizona. I enjoy learning, problem solving and prevailing. Excited to use my new skills in a new profession!
                                    <Divider />
                                     <br></br>
                                    Skills: HTML5, CSS3, JavaScript, jQuery, Express.js, React.js, Node.js, Database Theory, MongoDB/Mongoose, MySQL/Sequelize, Command Line, heroku and Git.
