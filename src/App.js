@@ -30,7 +30,7 @@ class App extends Component {
           <Route path="/contact" component={Contact} />
         </Switch>
         <Redirect from="/contact/index.html" to="/about" />
-        <Route path="/about" component={About} />
+        {/* <Route path="/about" component={About} /> */}
       </Router >
     )
   }
