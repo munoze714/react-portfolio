@@ -40,7 +40,6 @@ const useStyles = makeStyles((theme) => ({
         color: "#e3874f",
         borderColor: "#e3874f",
     }
-
 }));
 
 
@@ -59,19 +58,20 @@ export default function InputField() {
                         <Typography variant="h5">
                             Looking foward to hearing from you!
                     </Typography>
-                        <Grid
-                            component="form"
+                        <form
                             name="contact"
-                            method="POST"
-                            action='/contact'
+                            action="POST"
                             data-netlify="true"
                             netlify-honeypot="bot-field">
                             <CssTextField
+                                class="field"
                                 type="hidden"
                                 name="form-name"
                                 value="contact"
+
                             />
                             <CssTextField
+                                className="field"
                                 fullWidth={true}
                                 type="text"
                                 name="name"
@@ -81,6 +81,7 @@ export default function InputField() {
                             />
                             <br></br>
                             <CssTextField
+                                className="field half"
                                 fullWidth={true}
                                 type="email"
                                 name="email"
@@ -90,6 +91,7 @@ export default function InputField() {
                             />
                             <br></br>
                             <CssTextField
+                                className="field"
                                 fullWidth={true}
                                 type="email"
                                 name="message"
@@ -102,7 +104,14 @@ export default function InputField() {
                             />
                             <br></br>
                             <Button variant="outlined" type="submit" className={classes.button} >Send<SendIcon /></Button>
-                        </Grid>
+                            <div class="field">
+                                <input type="file" name="myfile" id="myfile" placeholder="Upload File" />
+                            </div>
+                            <div class="field">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div>
+
+                        </form>
                     </Paper>
                 </Grid>
             </Box>
