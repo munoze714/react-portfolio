@@ -153,7 +153,8 @@ export default function Navbar() {
           </List>
           <Divider />
           <Button
-            // href={}
+            href="/files/ElizabethMunoz.pdf"
+            download="ElizabethMunoz.pdf"
             size="large"
             variant="contained"
             color="default"
