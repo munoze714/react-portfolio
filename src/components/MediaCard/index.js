@@ -56,7 +56,7 @@ export default function MediaCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions className={classes.action}>
-                <Button size="small" color="primary" href={props.live}>
+                <Button target="_blank" size="small" color="primary" href={props.live}>
                     Live
                 </Button>
                 <Button size="small" color="primary" href={props.github}>
