@@ -53,7 +53,9 @@ export default function ComplexGrid() {
                                 <Divider />
                                 <br></br>
                                 <Typography variant="body1" color='textPrimary'>
-                                    I am a delicate Web Developer with a background in Graphic Design. Intrinsically motivated to connect with clients and collaboration with others to develop meaningful applications. Attained a Certificate in Full Stack Web Development at University of Arizona. I enjoy learning, problem solving and prevailing. Excited to use my new skills in a new profession!
+                                    I am a delicate Web Developer with a background in Graphic Design.
+                                    Intrinsically motivated to connect with clients and collaboration with others to develop meaningful applications.
+                                    Attained a Certificate in Full Stack Web Development at University of Arizona. I enjoy learning, problem solving and prevailing. Excited to use my new skills in a new profession!
                                    <Divider />
                                     <br></br>
                                    Skills: HTML5, CSS3, JavaScript, jQuery, Express.js, React.js, Node.js, Database Theory, MongoDB/Mongoose, MySQL/Sequelize, Command Line, heroku and Git.

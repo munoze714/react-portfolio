@@ -12,7 +12,7 @@
     "title": "Squaddle",
     "description": "Handlebars, MVC, and Mysql Sequelize ORM app designed to help you play game with friends according to your schedule. Once signed in, set your availability then view the available deployment times to link up with your friends.",
     "image": "/images/squaddle.jpeg",
-    "live": "https://www.squaddle.in/",
+    "live": "http://www.squaddle.in/",
     "github": "https://github.com/munoze714/squaddle.git"
   },
   {
