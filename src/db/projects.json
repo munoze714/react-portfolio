@@ -33,11 +33,11 @@
   },
   {
     "id": "5",
-    "title": "Work Day Scheduler",
-    "description": "Html , CSS, and Jquery app using Monment.js that allows the you to save events for each hour of the work day.",
-    "image": "/images/dayPlanner.jpeg",
-    "live": "https://munoze714.github.io/DayPlanner/",
-    "github": "https://github.com/munoze714/DayPlanner.git"
+    "title": "Weather Dashboard",
+    "description": "Html , CSS, and Jquery app using OpenWeather API that searchs to find current weather conditions and the future weather outlook for multiple cities.",
+    "image": "/images/WeatherDash.png",
+    "live": "https://munoze714.github.io/weatherDashboard/",
+    "github": "https://github.com/munoze714/weatherDashboard.git"
   },
   {
     "id": "6",
