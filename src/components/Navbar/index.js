@@ -105,7 +105,7 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h5" className={classes.title}>
-            Portfolio
+            Elizabeth A. Munoz
           </Typography>
         </Toolbar>
         <Drawer
@@ -161,6 +161,14 @@ export default function Navbar() {
             className={classes.button}
             startIcon={<SystemUpdateAltSharpIcon fontSize="large" />}>
             Resume
+          </Button>
+          <Button
+            href="mailto:munoze714@gmail.com"
+            size="medium"
+            variant="contained"
+            color="default"
+            className={classes.button}>
+            munoze714@gmail.com
           </Button>
         </Drawer>
       </AppBar>

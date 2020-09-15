@@ -6,7 +6,7 @@ class About extends Component {
   render(props) {
     return (
       <>
-        <Title>Elizabeth Munoz</Title>
+        <Title>About</Title>
         <Paper />
       </>
     )
