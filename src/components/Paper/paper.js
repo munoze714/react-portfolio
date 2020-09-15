@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography, Avatar, Divider } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper/index';
-import Links from "../Links";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -64,8 +63,6 @@ export default function ComplexGrid() {
                         </Grid>
                     </Grid>
                 </Grid>
-                <br></br>
-                <Links alignItems="flex-end" />
             </Paper>
         </div >
     );
