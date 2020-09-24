@@ -74,10 +74,7 @@ const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
-  },
-  button: {
-    margin: theme.spacing(1),
-  },
+  }
 }));
 
 export default function Navbar() {
@@ -158,17 +155,22 @@ export default function Navbar() {
             size="large"
             variant="contained"
             color="default"
-            className={classes.button}
             startIcon={<SystemUpdateAltSharpIcon fontSize="large" />}>
             Resume
           </Button>
           <Button
             href="mailto:munoze714@gmail.com"
-            size="medium"
+            size="large"
             variant="contained"
-            color="default"
-            className={classes.button}>
-            munoze714@gmail.com
+            color="default">
+            Email
+          </Button>
+          <Button
+            href="tel:520-307-3299"
+            size="large"
+            variant="contained"
+            color="default">
+            Call
           </Button>
         </Drawer>
       </AppBar>
